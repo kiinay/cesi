@@ -34,8 +34,15 @@
             margin-left: 680px
           .span8
             margin-right: 20px
-      #footer
-        clear: both
+      // #box_between
+      //   text-align: justify
+      //   margin-top: 40px
+      //   margin-left: 30px
+      //   color: black
+      //   background-color: white
+      //   opacity: 0.8
+      //   border-radius: 10px
+      //   padding: 14px
       #box
         text-align: justify
         margin-left: 30px
@@ -44,8 +51,6 @@
         opacity: 0.8
         border-radius: 10px
         padding: 14px
-        .last
-          width: 585px
 
 %body
   #contain
@@ -95,6 +100,10 @@
                       %div.label_text
                         %p
                           Aller courage
+        / .span8
+        /   #box_between
+        /     %p
+        /       looooooooool
       .row
         .span8
           #box
@@ -102,10 +111,11 @@
               MON MONTAGE  
         #absolute
           .span8
-            #box.last
-              %iframe(width="585" height="300" src="//www.youtube.com/embed/95-ZkX2orqk" frameborder="0" allowfullscreen)
+            #box
+              %a(href="http://www.youtube.com/results?search_query=4l+trophy" target="_blank")
+                %h2
+                  Fore All videos
+              %iframe(width="562" height="250" src="//www.youtube.com/embed/95-ZkX2orqk" frameborder="0" allowfullscreen)
               
-    #footer
-      %p
-        by yannick placerdat
+
 
