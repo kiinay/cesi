@@ -14,23 +14,36 @@
 
   :sass
     #contain
-      background-image: url('/img/lol1.png')
+      background-image: url('/img/lol.png')
       background-repeat: no-repeat
       background-position: 0 0
       width: 1400px
       height: 1000px
       margin: 0 auto
-      text-align: center
       #header
+        text-align: center
         padding-top: 5px
-        padding-bottom: 20px
         .title
           margin-top: 10px
-      #contain
-        .span8
-          margin-right: 20px
+      #container
+        .row
+          margin-top: 20px
+          #absolute
+            width: 720px
+            position: absolute
+            margin-left: 680px
+          .span8
+            margin-right: 20px
       #footer
         clear: both
+      #box
+        text-align: justify
+        margin-left: 30px
+        color: black
+        background-color: white
+        opacity: 0.8
+        border-radius: 10px
+        padding: 14px
 
 %body
   #contain
@@ -39,42 +52,58 @@
         The 4l Trophy
 
     #container
-      .span8
-        = yield
-      .span8
-        %div#page
-          %h1
-            Skitter - Slideshow for anytime!
-          %div.content
-            %div.border_box
-              %div.box_skitter.box_skitter_large
-                %ul
-                  %li
-                    %a(href="#cube")
-                      %img.cube(src="/img/lol.png")
-                    %div.label_text
-                      %p
-                        cube
-                  %li
-                    %a(href="#cubeRandom")
-                      %img.cubeRandom(src="/img/lol.png")
-                    %div.label_text
-                      %p
-                        cubeRandom
-                  %li
-                    %a(href="#block")
-                      %img.block(src="/img/lol.png")
-                    %div.label_text
-                      %p
-                        block
-                  %li
-                    %a(href="#cubeStop")
-                      %img.cubeStop(src="/img/lol.png")
-                    %div.label_text
-                      %p
-                        cubeStop
-          %h2
-            Enjoy! :D
+      .row
+        .span8
+          = yield
+        .span8
+          %div#page
+            %h1
+              Skitter - Slideshow for anytime!
+            %div.content
+              %div.border_box
+                %div.box_skitter.box_skitter_large
+                  %ul
+                    %li
+                      %a(href="#iceCube")
+                        %img.cubeStop(src="/img/monture.png")
+                      %div.label_text
+                        %p
+                          La fidèle Monture
+                    %li
+                      %a(href="#cubeStop")
+                        %img.cubeStop(src="/img/desert.png")
+                      %div.label_text
+                        %p
+                          Le terrain de jeu ;)
+                    %li
+                      %a(href="#cube")
+                        %img.cube(src="/img/start.png")
+                      %div.label_text
+                        %p
+                          Go 4L Trophy !!!
+                    %li
+                      %a(href="#block")
+                        %img.block(src="/img/picture1.png")
+                      %div.label_text
+                        %p
+                          Solidarité !
+                    %li
+                      %a(href="#cubeRandom")
+                        %img.cubeRandom(src="/img/courage.png")
+                      %div.label_text
+                        %p
+                          Aller courage
+      .row
+        .span8
+          #box
+            %h1
+              MON MONTAGE  
+        #absolute
+          .span8
+            #box.last
+              %h1
+                LIENS YOUTUBE
+              
     #footer
       %p
         by yannick placerdat
