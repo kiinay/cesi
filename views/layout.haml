@@ -14,7 +14,7 @@
 
   :sass
     #contain
-      background-image: url('/img/lol.png')
+      background-image: url('/img/lol.jpg')
       background-repeat: no-repeat
       background-position: 0 0
       width: 1400px
@@ -27,7 +27,7 @@
           margin-top: 10px
       #container
         .row
-          margin-top: 20px
+          margin-top: 14px
           #absolute
             width: 720px
             position: absolute
@@ -51,6 +51,8 @@
         opacity: 0.8
         border-radius: 10px
         padding: 14px
+        a
+          color: black
 
 %body
   #contain
@@ -65,7 +67,7 @@
         .span8
           %div#page
             %h1
-              Skitter - Slideshow for anytime!
+              Le 4l en image !
             %div.content
               %div.border_box
                 %div.box_skitter.box_skitter_large
@@ -104,18 +106,21 @@
         /   #box_between
         /     %p
         /       looooooooool
-      .row
-        .span8
-          #box
-            %h1
-              MON MONTAGE  
-        #absolute
+      #lol
+        .row
           .span8
             #box
-              %a(href="http://www.youtube.com/results?search_query=4l+trophy" target="_blank")
+              %a(href="http://youtu.be/tKVjrmceI1w" target="_blank")
                 %h2
-                  Fore All videos
-              %iframe(width="562" height="250" src="//www.youtube.com/embed/95-ZkX2orqk" frameborder="0" allowfullscreen)
+                  Notre Interview
+              %iframe(width="562" height="240" src="//www.youtube.com/embed/tKVjrmceI1w" frameborder="0" allowfullscreen)
+          #absolute
+            .span8
+              #box
+                %a(href="http://www.youtube.com/results?search_query=4l+trophy" target="_blank")
+                  %h2
+                    Pour voir toutes les vidéos clickez là
+                %iframe(width="562" height="240" src="//www.youtube.com/embed/95-ZkX2orqk" frameborder="0" allowfullscreen)
               
 
 
