@@ -1,35 +1,106 @@
 :sass
-  ul
-    li
-      list-style: disc
+  #presentation
+    margin-top: 40px
+    text-align: left
+    p
+      margin-top: 20px
+      margin-bottom: 0px
+    ul
+      margin-top: 10px
+      margin-bottom: 10px
+  #interview,
+  #video
+    text-align: center
+  #images
+    .box_skitter
+      margin: auto
+  #interview,
+  #video,
+  #images
+    margin-top: 80px
+    padding-top: 40px
+    border-top: solid #FFF
+  #presentation,
+  #interview,
+  #video,
+  #images
+    color: white
+    a
+      text-decoration: none
+    h1
+      margin-bottom: 40px
+      margin-top: 0px
+      font-size: 40px
+      text-align: center
+      color: white
+      font-weight: 500
 
-#box
-  %h2
-    Présentation du 4L
-
+#presentation
+  %h1
+    Présentation
   %p
-    En 1996, Jean-Jacques Rey travaille dans le tourisme.
-    %br
-    Il a l’idée d’une course en 4L dans le désert et se rend au Maroc pour étudier la faisabilité d’un Raid dans ce pays. La 4L passe partout et c’est ainsi qu’est né le 4L Trophy. Avec son entreprise Desertours il motive des étudiants pour cette épreuve.
-
+    En 1996, Jean-Jacques Rey travaille dans le tourisme. Il a l’idée d’une course en 4L dans le désert et se rend au Maroc pour étudier la faisabilité d’un Raid dans ce pays. La 4L passe partout et c’est ainsi qu’est né le 4L Trophy. Avec son entreprise Desertours il motive des étudiants pour cette épreuve.
   %p
-    A la fin du mois de février 1997 trois équipes sont au départ. Accompagnées en assistance par un 4x4, un logisticien, un mécano, un médecin.
-    %br
-    Grâce au soutien des étudiants de l’ESC Rennes, la course prend peu à peu forme. Lors de la quatrième édition en 2001, 50 voitures sont au départ. Et en 2005 ce sont 460 véhicules qui sont présents au rendez-vous.
-
+    A la fin du mois de février 1997 trois équipes sont au départ. Accompagnées en assistance par un 4x4, un logisticien, un mécano, un médecin. Grâce au soutien des étudiants de l’ESC Rennes, la course prend peu à peu forme. Lors de la quatrième édition en 2001, 50 voitures sont au départ. Et en 2005 ce sont 460 véhicules qui sont présents au rendez-vous.
   %p
     C’est en 2008 que la barre des 1000 voitures engagées au départ est atteinte. Le 4L Trophy a dersormais une grande renommée.
-
   %p
     En 2013 le 4L Trophy c’est :
     %ul
       %li
-        plus de 2200 articles de presse écrite. 
+        plus de 2200 articles de presse écrite.
       %li
         52 reportages télé.
       %li
         plus d’une centaine de passage radio.
     A souligner également que plus de 60 tonnes de fournitures scolaires ont été acheminées par plus de 2000 participants.
-
   %p
     Depuis 15 ans c’est plus de 15000 enfants qui ont pu être scolarisés par l’apport de tout le matériel fourni par les étudiants car dès la première édition J.J Rey oblige l’apport de 50kg de matériel scolaire aux partici- pants. Desormais c’est ai minimum 2 cartables et 2 sacs de sports remplis de fournitures qui doivent ap- porter les participants pour prendre part au Raid.
+
+#interview
+  %a(href="http://youtu.be/tKVjrmceI1w" target="_blank")
+    %h1
+      Notre Interview
+  %iframe(width="862" height="540" src="//www.youtube.com/embed/tKVjrmceI1w" frameborder="0" allowfullscreen)
+
+#video
+  %a(href="http://www.youtube.com/results?search_query=4l+trophy" target="_blank")
+    %h1
+      Pour voir toutes les vidéos clickez là
+  %iframe(width="862" height="540" src="//www.youtube.com/embed/95-ZkX2orqk" frameborder="0" allowfullscreen)
+
+#images
+  %h1
+    Le 4L en image
+  .box_skitter.box_skitter_large
+    %ul
+      %li
+        %a(href="#iceCube")
+          %img.cubeStop(src="/img/monture.png")
+        %div.label_text
+          %p
+            La fidèle Monture
+      %li
+        %a(href="#cubeStop")
+          %img.cubeStop(src="/img/desert.png")
+        %div.label_text
+          %p
+            Le terrain de jeu ;)
+      %li
+        %a(href="#cube")
+          %img.cube(src="/img/start.png")
+        %div.label_text
+          %p
+            Go 4L Trophy !!!
+      %li
+        %a(href="#block")
+          %img.block(src="/img/picture1.png")
+        %div.label_text
+          %p
+            Solidarité !
+      %li
+        %a(href="#cubeRandom")
+          %img.cubeRandom(src="/img/courage.png")
+        %div.label_text
+          %p
+            Aller courage
